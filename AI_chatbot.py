@@ -37,7 +37,7 @@ def call_groq_api(prompt, history=None, system_instruction=None):
     messages.append({"role": "user", "content": prompt})
 
     payload = {
-        "model": "qwen/qwen3-32b",
+        "model": "compound-beta",
         "messages": messages,
         "temperature": 0.3,
         "top_p": 0.9,
