@@ -206,7 +206,7 @@ def generate_text_qwen(user_input, fitur, pasangan_cag, mode_bahasa="Sunda", cha
         for m in history
     ] if history else None
     response = call_groq_api(prompt=user_prompt, history=formatted_history, system_instruction=system_instruction)
-    return response
+    return response, klasifikasi_bahasa_umum
 
 def bersihkan_superscript(teks):
     # Menghapus superscript angka ¹²³⁴⁵⁶⁷⁸⁹⁰ atau angka biasa setelah huruf
