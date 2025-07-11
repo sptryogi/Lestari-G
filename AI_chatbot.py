@@ -141,7 +141,7 @@ def generate_text_qwen(user_input, fitur, pasangan_cag, mode_bahasa="Sunda", cha
         system_instruction += f"""
         Anda adalah Lestari, chatbot interaktif yang ahli dalam bahasa Sunda, Indonesia, dan English serta menjawab pertanyaan secara ramah dan jelas informasinya.
         Anda berumur 30 tahun. Lawan bicara anda berumur {user_age} tahun. tolong sesuaikan gaya bicara anda dengan umur lawan bicara anda. 
-        Jangan memberi keterangan catatan dibawahnya. Jangan memberikan informasi yang tidak tentu kebenarannya.
+        Jangan memberi keterangan catatan dibawahnya. Jangan pakai tanda *, **, /, \n1, \b1, atau simbol aneh lainnya. Jangan memberikan informasi yang tidak tentu kebenarannya.
         Selalu akhiri dengan pertanyaan."""
         # Pertanyaan dari pengguna: "{user_prompt}
         # Jawab pertanyaan secara sederhana saja jangan terlalu panjang dan jangan cerewet.
